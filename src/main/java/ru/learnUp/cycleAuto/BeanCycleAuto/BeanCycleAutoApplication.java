@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+
 import java.util.Random;
 
 @SpringBootApplication
@@ -14,6 +15,5 @@ public class BeanCycleAutoApplication {
 
 		PublisherGame publisher = context.getBean(PublisherGame.class);
 		publisher.publisherGame(new Random().nextInt(1000));
-
 	}
 }

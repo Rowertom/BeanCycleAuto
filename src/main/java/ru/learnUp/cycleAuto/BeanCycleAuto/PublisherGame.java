@@ -9,7 +9,8 @@ import org.springframework.stereotype.Component;
 public class PublisherGame implements ApplicationContextAware {
     private ApplicationContext context;
 
-
+    @LogMethod
+    @WorkTime
     public void publisherGame(int number) {
         context.publishEvent(new GameEvent(number));
 

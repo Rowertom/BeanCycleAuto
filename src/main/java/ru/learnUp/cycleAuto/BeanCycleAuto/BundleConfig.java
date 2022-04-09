@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class BundleConfig {
     @Bean(name = "messageSource")
+    @LogMethod
+    @WorkTime
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
         messageSource.setBasename("text");
